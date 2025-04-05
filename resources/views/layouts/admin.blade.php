@@ -255,6 +255,18 @@
                   الأصناف
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="{{ url('/') }}">
+                  <svg class="bi"><use xlink:href="#cart"/></svg>
+                الرئيسية
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="{{ url('home') }}">
+                  <svg class="bi"><use xlink:href="#cart"/></svg>
+                  تسجيل الخروج
+                </a>
+              </li>
           </ul>
         </div>
       </div>

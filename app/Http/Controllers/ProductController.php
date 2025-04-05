@@ -8,8 +8,14 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+
+    public function  __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index(){
-        $products = Product::all();
+        $products = Product::paginate(10);
         return view('admin.products.index' , compact('products'));
     }
 
@@ -24,7 +30,7 @@ class ProductController extends Controller
         $product->name = $request->name;
         $product->quantity = $request->quantity;
         $product->price = $request->price;
-        $product->category = $request->category;
+        $product->category_id = $request->category;
         $product->description = $request->description;
         $product->save();
 
@@ -43,7 +49,7 @@ class ProductController extends Controller
         $product->name = $request->name;
         $product->quantity = $request->quantity;
         $product->price = $request->price;
-        $product->category = $request->category;
+        $product->category_id = $request->category;
         $product->description = $request->description;
         $product->save();
 

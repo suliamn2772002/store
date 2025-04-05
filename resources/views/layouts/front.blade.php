@@ -176,7 +176,7 @@
     <header data-bs-theme="dark">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">شرائح العرض</a>
+                <a class="navbar-brand" >متجري</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="تبديل التنقل">
                     <span class="navbar-toggler-icon"></span>
@@ -187,10 +187,13 @@
                             <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">حلقة الوصل</a>
+                            <a class="nav-link" href="{{ url('/products') }}">المنتجات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">رابط غير مفعل</a>
+                            <a class="nav-link " href="{{ url('/categories') }}">التصنيفات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="{{ url('/home') }}">تسجيل الخروج</a>
                         </li>
                     </ul>
                     <form action="{{ url('/') }}" method="GET" class="d-flex" role="search">

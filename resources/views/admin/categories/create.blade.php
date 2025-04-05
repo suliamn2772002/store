@@ -4,7 +4,7 @@
     @csrf
     <div class="mb-3">
         <label for="productName" class="form-label">اسم الصنف</label>
-        <input type="text" class="form-control" id="productName" name="name" placeholder="اسم المنتج ">
+        <input type="text" class="form-control" id="productName" name="name" placeholder="اسم الصنف ">
     </div>
     <input type="submit" value="احفظ" class="btn btn-info">
 </form>

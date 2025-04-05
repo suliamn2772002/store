@@ -86,9 +86,7 @@
             @endforeach
 
         </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
+        {{ $products->links() }}
 
 
 
